@@ -14,7 +14,6 @@ let buttonSubmit = document.getElementById("payFine");
 //Ця зміна містить всі дані які в нас зберігаються у файлі data
 let DB = data.finesData;
 
-
 /**
 Вам необхідно реалізувати наступний функціонал.
 Зробити валідацію до всіх полів
