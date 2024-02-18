@@ -7,7 +7,24 @@ window.fineList = {
 let DB = data.finesData;
 
 function searchFines(searchKey){
-    /*
+    
+    var filterDB;
+     if (searchKey === document.getElementById("searchInput2").value){
+        filterDB = DB.filter ((item) => {
+            return item.номер == searchKey;
+        });
+     } else if ((searchKey === document.getElementById("searchInput").value) && ((searchKey =='Перевищення швидкості') || (searchKey =='Невірне паркування') || (searchKey =='Їзда у не тверезому стані'))){
+            filterDB = DB.filter ((item) => {
+                return item.тип == searchKey;
+            });
+        } else alert('Невірний тип чи номер штрафу');
+    
+    return filterDB;
+}
+
+
+
+/*
      Напишіть свій код тут!
      Як ви бачите функція повертає статичні дані.
      Замість масиву який прописаний хардкодом, вам необхідно реалізувати цю функцію
@@ -19,9 +36,22 @@ function searchFines(searchKey){
      - Їзда у не тверезому стані
      */
 
+        /*switch (searchKey) {
+            case 'Перевищення швидкості':
+                filterDB = DB.filter ((item) => {
+                    return item.тип == searchKey;
+                });
+                break;
+            case 'Невірне паркування':
+
+
+        }
+     }
+
+
 
     return [
         {номер: '001', тип: 'Перевищення швидкості', сума: 100, дата: '2023-01-15'}
     ];
-}
+}*/
 
